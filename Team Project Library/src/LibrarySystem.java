@@ -36,6 +36,7 @@ public class LibrarySystem {
                 System.out.println("Invalid choice. Please enter a number between 1 and 4.");
             }
         }
-        System.out.println("Thank you for using the Library Management System. Goodbye!");
+        System.out.println("Thank you for visiting the library. Goodbye!");
+        scanner.close();
     }
 }
