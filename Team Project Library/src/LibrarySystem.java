@@ -12,7 +12,7 @@ public class LibrarySystem {
 
         int choice = 0;
         while (choice != 4) {
-            System.out.println("\nWelcome to the Library Management System");
+            System.out.println("\nWelcome to the Library");
             System.out.println("1. Display Available Books");
             System.out.println("2. Checkout a Book");
             System.out.println("3. Return a Book");
