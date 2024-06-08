@@ -25,13 +25,13 @@ class Library {
         for (Book book : books) {
             if (book.getTitle().equalsIgnoreCase(title) && !book.isCheckedOut()) {
                 book.setCheckedOut(true);
-                System.out.println("You have successfully checked out \"" + title + "\".");
+                System.out.println("Thank you for checking out \"" + title + "\". Enjoy!");
                 found = true;
                 break;
             }
         }
         if (!found) {
-            System.out.println("Sorry, \"" + title + "\" is either not available or already checked out.");
+            System.out.println("Sorry, \"" + title + "\" is either not available or  is already checked out.");
         }
     }
 
@@ -40,13 +40,13 @@ class Library {
         for (Book book : books) {
             if (book.getTitle().equalsIgnoreCase(title) && book.isCheckedOut()) {
                 book.setCheckedOut(false);
-                System.out.println("You have successfully returned \"" + title + "\".");
+                System.out.println("Thank you for returning \"" + title + "\".");
                 found = true;
                 break;
             }
         }
         if (!found) {
-            System.out.println("Sorry, \"" + title + "\" cannot be returned as it is either not found or not checked out.");
+            System.out.println("Sorry, \"" + title + "\" cannot be returned.");
         }
     }
 }
