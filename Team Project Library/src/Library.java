@@ -20,7 +20,7 @@ class Library {
         }
     }
 
-    public void checkoutBook(String title) {
+public void checkoutBook(String title) {
         boolean found = false;
         for (Book book : books) {
             if (book.getTitle().equalsIgnoreCase(title) && !book.isCheckedOut()) {
@@ -29,13 +29,18 @@ class Library {
                 found = true;
                 break;
             }
-        }
-        if (!found) {
-            System.out.println("Sorry, \"" + title + "\" is either not available or  is already checked out.");
+            if(book.getTitle().equalsIgnoreCase(title) && book.isCheckedOut()) {
+            	System.out.println(title + " is currently checked out.");
+            	break;
+            }
+            else {
+            	String excep = "Sorry, \"" + title + "\" is not in this library.";
+                throw new IllegalArgumentException(excep);
+            }
         }
     }
 
-    public void returnBook(String title) {
+      public void returnBook(String title) {
         boolean found = false;
         for (Book book : books) {
             if (book.getTitle().equalsIgnoreCase(title) && book.isCheckedOut()) {
@@ -46,7 +51,8 @@ class Library {
             }
         }
         if (!found) {
-            System.out.println("Sorry, \"" + title + "\" cannot be returned.");
+        	String excep = "Sorry, \"" + title + "\" cannot be returned.";
+           	throw new IllegalArgumentException(excep);
         }
     }
 }
