@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class LibrarySystem {
 	public static void main(String[] args) {
 		Library library = new Library();
-
+//All books in libary
 		// Roleplaying Books / 1
 		library.addBook(new Book("Players Handbook", "Gary Gygax", 1));
 		library.addBook(new Book("The Monster Manual", "Gary Gygax", 1));
@@ -33,6 +33,7 @@ public class LibrarySystem {
 		Scanner scanner = new Scanner(System.in);
 
 		int choice = 0;
+		//A try/catch for preventing mismatch input.
 		try {
 			while (choice != 4) {
 				System.out.println("\nWelcome to the Library");
