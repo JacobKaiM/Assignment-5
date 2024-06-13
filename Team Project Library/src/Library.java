@@ -10,7 +10,7 @@ class Library {
 	public void addBook(Book book) {
 			books.add(book);
 	}
-
+//This allows for the user to pick the genre of book they want to look at so it doesn't just throw 18 book entries at them.
 	public void displayGenres(String genre) {
 		if (genre.equalsIgnoreCase("Roleplaying")) {
 			displayAvailableBooks(1);
@@ -26,7 +26,7 @@ class Library {
 			displayAvailableBooks(6);
 		}
 	}
-
+//This display the books based off what choice was made in the genre selector.
 	public void displayAvailableBooks(int choice) {
 		System.out.println("Available Books:");
 		for (Book book : books) {
