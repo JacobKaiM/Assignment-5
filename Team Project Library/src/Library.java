@@ -24,7 +24,7 @@ class Library {
 			displayAvailableBooks(5);
 		} else if (genre.equalsIgnoreCase("Fantasy")) {
 			displayAvailableBooks(6);
-		}else if (genre.equalsIgnoreCase("Philosophy"){
+		}else if (genre.equalsIgnoreCase("Philosophy")) {
 			displayAvailableBooks(7);
 		}
 	}
