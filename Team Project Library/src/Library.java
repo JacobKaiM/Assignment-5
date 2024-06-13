@@ -24,6 +24,8 @@ class Library {
 			displayAvailableBooks(5);
 		} else if (genre.equalsIgnoreCase("Fantasy")) {
 			displayAvailableBooks(6);
+		}else if (genre.equalsIgnoreCase("Philosophy"){
+			displayAvailableBooks(7);
 		}
 	}
 //This display the books based off what choice was made in the genre selector.
