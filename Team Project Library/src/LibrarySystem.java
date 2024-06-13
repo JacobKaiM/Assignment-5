@@ -29,7 +29,10 @@ public class LibrarySystem {
 		library.addBook(new Book("The Last Wish", "Andrzej Sapkowski", 6));
 		library.addBook(new Book("The Lord of the Rings", "J.R.R. Tolkien", 6));
 		library.addBook(new Book("Howl's Moving Castle", "Diana Wynne Jones", 6));
-
+		// Philosophy / 7
+		library.addBook(new Book("12 Rules for Life", "Jordan Peterson", 7));
+		library.addBook(new Book("The 48 Laws of Power", "Robert Green", 7));
+		library.addBook(new Book("Read People Like a Book", "Patrick King", 7));
 		Scanner scanner = new Scanner(System.in);
 
 		int choice = 0;
@@ -47,7 +50,7 @@ public class LibrarySystem {
 				scanner.nextLine(); // Consume newline character
 
 				if (choice == 1) {
-					System.out.println("Available Genres: Classics, Fantasy, Manga, Roleplaying, Science Fiction");
+					System.out.println("Available Genres: Classics, Fantasy, Manga, Roleplaying, Science Fiction, Philosophy");
 					System.out.print("Enter the genre you want to view:");
 					String genre = scanner.nextLine();
 					library.displayGenres(genre);
