@@ -1,6 +1,13 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+/*
+ * LibrarySystem allows the user to make choices to view check out and return books within the library. 
+ * Choice 1 to view all books broken down by genre 
+ * Choice 2 to select a book to check out by typing in title 
+ * Choice 3 to return already checked out book
+ * Choice for to exit and terminate program 
+ * 
+ */
 public class LibrarySystem {
 	public static void main(String[] args) {
 		Library library = new Library();
@@ -46,6 +53,7 @@ public class LibrarySystem {
 				System.out.println("4. Exit");
 				System.out.print("Enter your choice: ");
 
+				// scanner to input choices in console
 				choice = scanner.nextInt();
 				scanner.nextLine(); // Consume newline character
 
