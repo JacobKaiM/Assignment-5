@@ -1,17 +1,21 @@
-
+/*
+ * Book class to set up the properties used the properties of books within the library 
+ */
 class Book {
 	private String title;
 	private String author;
 	private int genre;
 	private boolean checkedOut;
 
+	// Constructor 
 	public Book(String title, String author, int genre) {
 		this.title = title;
 		this.author = author;
 		this.genre = genre;
 		this.checkedOut = false;
 	}
-
+	
+	// Getter Methods 
 	public String getTitle() {
 		return title;
 	}
