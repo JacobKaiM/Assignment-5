@@ -9,7 +9,7 @@ class Library {
 
 	// initialize library ArrayList
 	public Library() {
-		this.books = new ArrayList<>(18);
+		this.books = new ArrayList<>(21);
 	}
 	
 	// adds book to the list 
